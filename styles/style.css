@@ -209,7 +209,58 @@ nav h3{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
+/* our-sponspors-content  start here*/
+  .our-sponspors-content{
+    width: 48%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .our-sponspors-content h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .our-sponspors-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  /* our-grid-icons */
+  .our-maring-center{
+     margin-left: 60px;
+     margin-bottom: 60px;
+  }
+  .our-grid-icons{
+    margin-top: 40px;
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     align-items: center;
+  }
+  .our-grid-icons div{
+    width: 50%;
+  }
+  .our-grid-icons img{
+    width: 100%;
+  }
+  /* footer section start */
+  .footer{
+    margin: 0 100px;
+    border-radius: 5px;
+    background: #FFF4E7;
+    margin-bottom: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p{
+    color: #424242;
+    font-size: 16px;
+    font-weight: 400;
+  }
 /* responsive media screen */
 @media screen and (max-width: 576px) {
     nav h3, .brand-new-container h1{
@@ -218,7 +269,7 @@ nav h3{
     .display-flex, .features-team-container, .features-container{
         flex-direction: column;
     }
-    .teams-img, .grid-layout-icons{
+    .teams-img, .grid-layout-icons, .our-grid-icons{
         grid-template-columns: 1fr;
     }
     .nav-items{
@@ -228,16 +279,26 @@ nav h3{
         width: 100%;
         text-align: center;
     }
-    .grid-layout-icons{
-        gap: 10px;
+    .grid-layout-icons, .our-grid-icons{
+        gap: 15px;
     }
     .teams-img img{
         width: 318px;
     }
+    .our-grid-icons div{
+        text-align: center;
+    }
+    .our-grid-icons img{
+        width: 150px;
+    }
     .brand-new-container, 
     .architect-size, 
     .features-will-enjoy, 
-    .some-facts-content, .some-facts-icons{
+    .some-facts-content, 
+    .some-facts-icons, 
+    .our-sponspors-content, 
+    .our-grid-icons div
+    {
         width: 100%;
     }
     .brand-new-container{
@@ -249,17 +310,28 @@ nav h3{
      .features-container{
         gap: 0px;
      }
-    .features-section{
+     .our-maring-center{
+        margin: 30px;
+     }
+    .features-section, .footer{
         margin: 0;
-        margin-top: 40px;
+        margin-bottom: 40px;
     }
-    .head-section{
+    .head-section, .footer{
         margin: 0px;
+    }
+    .footer{
+        text-align: center;
+        height: 70px;
+        line-height: 24px;
     }
     .border-absolute{
         position: absolute;
         bottom: 0;
         left: 30%;
+    }
+    .our-maring-center{
+        margin-left: 0;
     }
     .btn-10{
         padding: 10px 10px;
