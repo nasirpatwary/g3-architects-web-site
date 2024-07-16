@@ -23,7 +23,6 @@ header{
     color: #727272;
 }
 /* navbar styles */
-
 nav h3{
     text-align: center;
     font-size: 40px;
@@ -44,18 +43,18 @@ nav h3{
 .head-section{
     margin: 0 100px;
 }
-.section-container{
+.brand-new-container{
     width: 855px;
     margin: 0 auto;
     margin-top: 100px;
 }
-.section-container h1{
+.brand-new-container h1{
     font-size: 54px;
     text-align: center;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.section-container p{
+.brand-new-container p{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px; 
@@ -79,24 +78,190 @@ nav h3{
 .banner-image img{
     width: 100%;
 }
+/* features-section start here */
+.features-section{
+    margin: 0 130px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.features-team-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.teams-img img{
+   width: 250px;
+}
+.span-color{
+    color: #FF900E;
+}
+.features-content h1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.features-content p{
+   text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-right: 5px;
+}
+/* Features you will love & enjoy */
+.features-container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+.architect-size{
+    width: 610px;
+    position: relative;
+}
+.border-absolute{
+    position: absolute;
+    top: 93%;
+    left: -35px;
+}
+.architect-size img{
+    width: 100%;
+}
+
+.features-will-enjoy{
+    width: 586px;
+}
+.features-will-enjoy h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.border-column{
+    border-left: 3px solid #FF900E;;
+}
+.features-will-enjoy p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 15px;
+}
+.box-shadow{
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 15px;
+}
+.btn-10{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 30px 40px;
+    border-radius: 5px;
+    background: #FF900E;
+    border: none;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.btn-span{
+    font-size: 14px;
+    font-weight: 400;
+}
+/* Some Facts start here */
+.some-facts-content{
+   width: 47%;
+   margin-bottom: 40px;
+}
+.some-facts-content h3{
+    font-size: 35px;
+    font-weight: 700;
+}
+.some-facts-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 15px;
+}
+.some-facts-icons{
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.some-facts-icons h3{
+    font-size: 32px;
+    font-weight: 600;
+    color: #424242;
+}
+.some-facts-icons p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.grid-layout-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* responsive media screen */
 @media screen and (max-width: 576px) {
-    nav h3, .section-container h1{
+    nav h3, .brand-new-container h1{
         font-size: 30px;
     }
-    .display-flex{
+    .display-flex, .features-team-container, .features-container{
         flex-direction: column;
+    }
+    .teams-img, .grid-layout-icons{
+        grid-template-columns: 1fr;
     }
     .nav-items{
         margin: 10px 0px;
     }
-    .section-container{
+    .features-content{
+        width: 100%;
+        text-align: center;
+    }
+    .grid-layout-icons{
+        gap: 10px;
+    }
+    .teams-img img{
+        width: 318px;
+    }
+    .brand-new-container, 
+    .architect-size, 
+    .features-will-enjoy, 
+    .some-facts-content, .some-facts-icons{
         width: 100%;
     }
-    .section-container{
+    .brand-new-container{
         margin-top: 50px;
+    }
+    .features-will-enjoy{
+        margin-top:  10px;
+    }
+     .features-container{
+        gap: 0px;
+     }
+    .features-section{
+        margin: 0;
+        margin-top: 40px;
     }
     .head-section{
         margin: 0px;
+    }
+    .border-absolute{
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+    }
+    .btn-10{
+        padding: 10px 10px;
     }
 }
